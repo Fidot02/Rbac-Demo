@@ -8,4 +8,4 @@ const AdminPanel = () => {
   )
 }
 
-export default WithRoleCheck(AdminPanel,[ROLES.ADMIN])
+export default WithRoleCheck(AdminPanel,[ROLES.ADMIN, ROLES.MANAGER])

@@ -2,9 +2,7 @@ import React from 'react'
 import { useContext, useState } from 'react'
 import { AuthContext } from '../../contexts/AuthContext'
 import {useNavigate} from 'react-router-dom'
-
-
-
+import '../../assets/css/login.css'
 
 
 
@@ -29,7 +27,7 @@ const handleSubmit = (e) =>{
 
   return (
     <>
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='login-form'>
       <h2>Login</h2>
       {error && (<p>{error}</p>)}
       <input type="text" placeholder='username' value={userName} onChange={(e)=>setUserName(e.target.value)}/>
